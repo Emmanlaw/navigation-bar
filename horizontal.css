@@ -1,0 +1,59 @@
+body {
+    margin: 0;
+}
+span {
+    color: red;
+}
+
+/* horizontal navbar */
+
+
+/* inline */
+ul.inlinelist {
+
+
+}
+.inlinelist li {
+    display: inline;
+}
+
+/* float */
+ul.floatlist {
+    background-color: rgba(0, 0, 0, 0.8);
+    overflow: auto;
+}
+.floatlist li {
+    float: left;
+    color: black;
+    display: inline;
+}
+.floatlist li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    display: block;
+}
+
+/* float sticky */
+ul.sticky {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
+.sticky li {
+    float: right;
+    
+}
+.sticky li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    
+}

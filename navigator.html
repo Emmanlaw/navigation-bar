@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Navigation Bar</title>
+    <link rel="stylesheet" href="navigator.css">
+</head>
+<body>
+    <header>
+    <h1>CSS Navigation Bar</h1>
+    <h2>Full-height Fixed Vertical Navbar</h2>
+    <p>Create a full-height, "sticky" side navigation</p>
+    </header>
+    <nav>
+        <ul class="vertical2">
+            <li><a class="active2" href="Home">Home</a></li>
+            <li><a href="vertical">Vertical Navbar</a></li>
+            <li><a href="horizontal">Horizontal Navbar</a></li>
+            <li><a href="about">About</a></li>
+        </ul>
+    </nav>
+    <div>
+        <ul class="nav">
+            <li>Home</li>
+            <li>Vertical Navbar</li>
+            <li>Horizontal Navbar</li>
+            <li>About</li>
+        </ul>
+    </div>
+    <div>
+        <h2>Navigation Bars</h2>
+        <p>Having easy-to-use navigation is important for any web site.</p>
+        <p>With CSS you can transform boring HTML menus into good-looking navigation bars.</p>
+        <h2>Navigation Bar = List of Links</h2>
+        <p>A navigation bar needs standard HTML as a base</p>
+        <p>In our examples we will build the navigation bar from a standard HTML list.</p>
+        <p>A navigation bar is basically a list of link, so using the &lt;ul&gt; and &lt;li&gt; elements makes perfect sense:</li></p>
+        <ul>
+            <li><a href="home">home</a></li>
+            <li><a href="vertical">Vertical Navbar</a></li>
+            <li><a href="horizontal">Horizontal Navbar</a></li>
+            <li><a href="about">About</a></li>
+        </ul>
+        <p>Now let's remove the bullets and the margins and padding from the list:</p>
+        <ul class="remove">
+            <li><a href="Home">home</a></li>
+            <li><a href="vertical">Vertical Navbar</a></li>
+            <li><a href="horizontal">Horizontal Navbar</a></li>
+            <li><a href="about">About</a></li>
+        </ul>
+        <h4>Example explained:</h4>
+        <ul>
+            <li><span>list-style-type: none;</span> - Removes the bullets. A navigation bar boes not need list markers.</li>
+            <li>Set <span>margin: 0;</span>and <span>padding: 0;</span> to remove browser default settings</li>
+        </ul>
+        <p>The code in the exaple above is the standard code used in both vertical, and horizontal navigation bars, which you will learn more about int he next chapters.</p>
+    </div>
+    <div>
+        <h2>Vertical Navigation Bar</h2>
+        <ul class="vertical">
+            <li><a href="Home">home</a></li>
+            <li><a href="vertical">Vertical Navbar</a></li>
+            <li><a href="horizontal">Horizontal Navbar</a></li>
+            <li><a href="about">About</a></li>
+        </ul>
+        <h4>Example explained:</h4>
+        <ul>
+            <li><span>diplay: block;</span>- Displaying the links as block elements makes the whole link area clickable (not just the text), and it allows us to specify the width (and padding, margin, height, etc. if you want.)</li>
+            <li><span>width: 60px;</span>- Block elements take up the full width available by default. We want to specify a 60 pixels width</li>
+        </ul>
+        <p>You can also set the width of <span>ul</span>, and remove the width of <span>anchor</span>, as they will take up the full width available when displayed as block elements. This will produce the same result as our previous examples.</p>
+        <h4>Vertical Navigation Bar Examples:</h4>
+        <ul class="vertical1">
+            <li><a class="active" href="home">Home</a></li>
+            <li><a href="vertical">Vertical Navbar</a></li>
+            <li><a href="horizontal">Horizontal Navbar</a></li>
+            <li><a href="about">About</a></li>
+        </ul>
+        <h2>Active/Current Navigation Link</h2>
+        <p>Add an "active" class to the currnt link to let the user know which page is on, you can add <span>class</span> to the <span>anchor</span> tag</p>
+    </div>
+</body>
+</html>

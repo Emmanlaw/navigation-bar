@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Horizontal Navigation Bar</title>
+    <style>
+        body {
+    margin: 0;
+}
+span {
+    color: red;
+}
+
+/* horizontal navbar */
+
+
+/* inline */
+.inlinelist li {
+    display: inline;
+}
+
+/* float */
+ul.floatlist {
+    background-color: rgba(0, 0, 0, 0.8);
+    overflow: auto;
+}
+.floatlist li {
+    float: left;
+    color: black;
+    display: inline;
+}
+.floatlist li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    display: block;
+}
+
+/* float sticky */
+ul.sticky {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
+.sticky li {
+    float: right;
+}
+.sticky li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+    </style>
+</head>
+<body>
+    <header style="padding-top: 20px;">
+        <h1>CSS Horizontal Navigation Bar</h1>
+        <h2>Horizontal Navigation Bar</h2>
+        <p>There are two ways to create a horizontal navigation bar. Using <span>inline</span> or <span>floating</span>list items.</p>
+    </header>
+    <nav>
+        <ul class="sticky">
+            <li><a href="home">Home</a></li>
+            <li><a href="watch">Watch</a></li>
+            <li><a href="market">Market</a></li>
+            <li><a href="groups">Groups</a></li>
+            <li class="gaming"><a href="gaming">Gaming</a></li>
+        </ul>
+    </nav>
+    <div>
+        <h2>Inline List Items</h2>
+        <p>One way to build a horizontal navigation bar is to specify the <span>li elements</span> as inline, in addition to the "standard" code from the previous page:</p>
+        <h4>Ex.</h4>
+        <ul class="inlinelist">
+            <li><a href="home">Home</a></li>
+            <li><a href="watch">Watch</a></li>
+            <li><a href="market">Market</a></li>
+            <li><a href="groups">Groups</a></li>
+            <li><a href="gaming">Gaming</a></li>
+        </ul>
+            <p><span>dispaly: inline;</span> - By default, <span>li</span> elements are block elements. Here, we remove the line breaks before and after each list item, to display them on line</p>
+    </div>
+    <div>
+        <h2>Floating List Items</h2>
+        <p>Another way of creating a horizontal navigation bar is to float the <span>li</span> elements, and specify a layout for the navigation links:</p>
+        <ul class="floatlist">
+            <li><a href="home">Home</a></li>
+            <li><a href="watch">Watch</a></li>
+            <li><a href="market">Market</a></li>
+            <li><a href="groups">Groups</a></li>
+            <li><a href="gaming">Gaming</a></li>
+        </ul>
+        <h4>Ex.</h4>
+        <ul>
+            <li><span>float: left;</span> - Use float to get block elements to float next to each other.</li>
+            <li><span>display:block;</span> - Allows us to specify padding (and heifht, width, width, margins, etc. if you want).</li>
+            <li><span>padding: 8px;</span> - Specify some padding between each <span>&lt;a&gt;</span> element, to make them look good.</li>
+            <li><span>background-color: white;</span> - Add a background- color to each <span>&lt;a&gt;</span> element.</li>
+        </ul>
+        <p><strong>Tip:</strong> Add the background-color to <span>&lt;ul&gt;</span> instead of each <span>&lt;a&gt;</span> element if you want a full- width background color.</p>
+    </div>
+    <div>
+        <h2>overflow: hidden</h2>
+        <p>floated elements are taken out of the normal document flow and do not take up space. Because the children take up no space.</p>
+        <p>Adding <span>overflow: hidden;</span> triggers a new block formatting context tant prevent <span>NavBar</span> from "collapsing" when it has floated children.</p>
+
+    </div>
+    <h2>position: sticky do not work on <span>order list or unordered list</span> </h2>
+    <p>sticky works when you put the CSS in the <span>head</span>.</p>
+</body>
+</html>

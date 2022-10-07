@@ -1,0 +1,84 @@
+/* main nav */
+ul.nav {
+    list-style-type: none;
+    margin: 0px;
+}
+span {
+    color: red;
+}
+
+/* remove the bullets and margins and padding */
+ul.remove {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+/* vertical navigation bar */
+ul.vertical {
+    list-style-type: none;
+}
+.vertical li a {
+    display: block;
+    width: 80px;
+    background-color: turquoise;
+}
+/* vertical nav bar */
+.vertical1 {
+    background-color: #1C2541;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    width: 200px;
+    border: 1px solid black;
+}
+.vertical1 li a {
+    text-decoration: none;
+    margin: 0;
+    padding: 10px;
+    display: block;
+    color: white;
+    text-align: center;
+    border: 1px solid black;
+}
+.vertical1 li a:hover {
+    background-color: #0B132B;
+    color: grey;
+}
+li a.active {
+    background-color: #0B132B;
+}
+
+/* Full-height Fixed Vertical Navbar */
+ul.vertical2 {
+    background-color: #3066BE;
+    list-style-type: none;
+    width: 20%;
+    position: fixed;
+    top: 0%;
+    height: 100%;
+    overflow: auto;
+    display: block;
+    margin: 0;
+    padding: 0;
+}
+.vertical2 li a {
+    text-decoration: none;
+    color: white;
+    display: block;
+    text-align: center;
+    margin: 0px;
+    padding: 10px;
+}
+
+
+
+div {
+    margin-left: 25%;
+}
+header {
+    text-align: center;
+}
+body {
+    margin: 0;
+}
